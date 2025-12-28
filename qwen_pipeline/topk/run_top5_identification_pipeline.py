@@ -67,8 +67,8 @@ def build_parser() -> argparse.ArgumentParser:
     prepare.add_argument("--answer_max_new_tokens", type=int, default=512)
     prepare.add_argument("--require_reasoning", action="store_true")
     prepare.add_argument("--answer_rerank_sections", action="store_true")
-    prepare.add_argument("--inat_mapping_path", type=str, default="/data/qianMa/EchoSight/images/val_id2name.json")
-    prepare.add_argument("--evqa_landmark_root", type=str, default="/data/qianMa/EchoSight/E-VQA/landmark")
+    prepare.add_argument("--inat_mapping_path", type=str, default="$ROOT_PATH/EchoSight/images/val_id2name.json")
+    prepare.add_argument("--evqa_landmark_root", type=str, default="$ROOT_PATH/EchoSight/E-VQA/landmark")
     prepare.add_argument("--log_file", type=str, default=None)
     prepare.add_argument("--log_level", type=str, default="INFO")
 
@@ -99,8 +99,8 @@ def build_parser() -> argparse.ArgumentParser:
         help="Weight (0-1) for blending retrieval similarities with EchoSight scores during answer rerank",
     )
     answer.add_argument("--answer_rerank_sections", action="store_true")
-    answer.add_argument("--inat_mapping_path", type=str, default="/data/qianMa/EchoSight/images/val_id2name.json")
-    answer.add_argument("--evqa_landmark_root", type=str, default="/data/qianMa/EchoSight/E-VQA/landmark")
+    answer.add_argument("--inat_mapping_path", type=str, default="$ROOT_PATH/EchoSight/images/val_id2name.json")
+    answer.add_argument("--evqa_landmark_root", type=str, default="$ROOT_PATH/EchoSight/E-VQA/landmark")
     answer.add_argument("--log_file", type=str, default=None)
     answer.add_argument("--log_level", type=str, default="INFO")
 

@@ -14,6 +14,12 @@ This file organize as follows:
 
 # Generation
 
+# External Instructions for reproducing baselines
+
+## EchoSight
+
+## ReflectiVA
+
 # Acknowledgement
 
 We would like to thank the authors of EchoSight and ReflectiVA for their released code and checkpoint.
