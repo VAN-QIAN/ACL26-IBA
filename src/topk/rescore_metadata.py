@@ -17,7 +17,8 @@ import sys
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional
 
-from qwen_pipeline.pipeline import QwenVLModel  # noqa: F401  (re-exported wrapper)
+# Local import to avoid depending on the external package name.
+from ..pipeline import QwenVLModel  # noqa: F401  (re-exported wrapper)
 
 
 def _load_jsonl(path: Path) -> List[Dict]:

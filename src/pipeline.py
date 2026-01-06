@@ -62,9 +62,9 @@ class PipelineConfig:
     answer_backend: str = "qwen"
     answer_backend_device: Optional[str] = None
     answer_backend_model_path: Optional[str] = None
-    inat_mapping_path: Optional[str] = "$ROOT_PATH/EchoSight/images/val_id2name.json"
+    inat_mapping_path: Optional[str] = "$ROOT_PATH/images/val_id2name.json"
     answer_rerank_sections: bool = False
-    evqa_landmark_root: Optional[str] = "$ROOT_PATH/EchoSight/E-VQA/landmark"
+    evqa_landmark_root: Optional[str] = "$ROOT_PATH/E-VQA/landmark"
     log_file: Optional[str] = None
     log_level: str = "INFO"
 
