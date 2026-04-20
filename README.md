@@ -1,5 +1,5 @@
-# ACL26-Submission 70
-This is the core code implication of our ACL Submission 70.
+# [ACL26 Findings] Ground Then Rank: Revisiting Knowledge-Based VQA with Training-Free Entity Identification
+This is the core code implication of anonymous github version of our ACL Findings paper Ground Then Rank: Revisiting Knowledge-Based VQA with Training-Free Entity Identification.
 Our core prompt template has been outlined in Appendix E and corresponding implication can be found under path `model/prompt_templates.py`.
 
 This file mainly organize as follows:
